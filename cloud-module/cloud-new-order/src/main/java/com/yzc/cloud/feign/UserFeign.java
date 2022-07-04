@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @DATE: 2022/6/29 13:58
  */
 @Component
-@FeignClient(name = "cloud-user",path = "/")
+@FeignClient(name = "cloud-user",path = "/user")
 public interface UserFeign {
 
-    @GetMapping("/user")
+    @GetMapping
      String resultObject();
 
-    @GetMapping("/user/updateUser")
+    @GetMapping("/updateUser")
     void updateUser();
 }
