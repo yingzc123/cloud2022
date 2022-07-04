@@ -1,16 +1,16 @@
 package com.yzc.cloud.entity;
 
-import java.math.BigDecimal;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import java.io.Serializable;
-import java.util.Collection;
-import java.util.List;
-
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Collection;
+import java.util.List;
 
 /**
  * <p>

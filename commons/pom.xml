@@ -3,13 +3,11 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>cloud2022demo</artifactId>
+        <artifactId>cloudMaster</artifactId>
         <groupId>com.yzc.cloud</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>commons</artifactId>
     <packaging>pom</packaging>
 
     <modules>
@@ -17,22 +15,17 @@
         <module>cloud-gateway-yzc</module>
         <module>cloud-public-jar</module>
         <module>cloud-druid-yzc</module>
-        <module>cloud-mysql-yzc</module>
         <module>cloud-sqlServer-yzc</module>
         <module>cloud-base-yzc</module>
+        <module>cloud-mysql-yzc</module>
     </modules>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
+    <artifactId>commons</artifactId>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
 
 
 </project>

@@ -6,7 +6,6 @@ import com.aspose.pdf.TextAbsorber;
 import com.aspose.pdf.devices.PngDevice;
 import com.aspose.pdf.devices.Resolution;
 
-import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 
 /**

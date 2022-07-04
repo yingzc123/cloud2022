@@ -2,7 +2,6 @@ package com.yzc.cloud.controller;
 
 
 import com.alibaba.fastjson.JSONArray;
-import com.yzc.cloud.entity.User;
 import com.yzc.cloud.feign.OrderFeign;
 import com.yzc.cloud.result.ResultObject;
 import com.yzc.cloud.service.UserService;
@@ -21,7 +20,6 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
 
 /**
  * @author: SanZ

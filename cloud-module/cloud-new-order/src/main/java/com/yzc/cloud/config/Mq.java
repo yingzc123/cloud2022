@@ -1,6 +1,5 @@
 package com.yzc.cloud.config;
 
-import com.yzc.cloud.feign.UserFeign;
 import com.yzc.cloud.feign.proxyFeign.ProxyUserFeign;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;

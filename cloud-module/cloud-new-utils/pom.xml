@@ -17,7 +17,7 @@
     </properties>
 
     <dependencies>
-     <dependency>
+        <dependency>
             <groupId>aspose-words-22.6-jdk17</groupId>
             <artifactId>aspose-words</artifactId>
             <version>22.6</version>
@@ -61,7 +61,7 @@
 
 
 
-             <dependency>
+        <dependency>
             <groupId>com.yzc.cloud</groupId>
             <artifactId>cloud-base-yzc</artifactId>
             <version>${project.version}</version>
@@ -69,11 +69,11 @@
     </dependencies>
 
     <repositories>
-       <!-- <repository>
-            <id>com.e-iceblue</id>
-            <name>e-iceblue</name>
-            <url>https://repo.e-iceblue.cn/repository/maven-public/</url>
-        </repository>-->
+        <!-- <repository>
+             <id>com.e-iceblue</id>
+             <name>e-iceblue</name>
+             <url>https://repo.e-iceblue.cn/repository/maven-public/</url>
+         </repository>-->
         <repository>
             <id>AsposeJavaAPI</id>
             <name>Aspose Java API</name>

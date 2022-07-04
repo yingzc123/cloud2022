@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.yzc.cloud</groupId>
-    <artifactId>cloud2022demo</artifactId>
+    <artifactId>cloudMaster</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>cloud-gateway</module>
         <module>commons</module>
+        <module>cloud-gateway</module>
         <module>cloud-module</module>
     </modules>
 

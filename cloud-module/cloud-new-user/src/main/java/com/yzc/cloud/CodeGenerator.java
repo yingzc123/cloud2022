@@ -1,12 +1,12 @@
 package com.yzc.cloud;
 
+
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
 import com.baomidou.mybatisplus.generator.InjectionConfig;
-import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
@@ -43,7 +43,7 @@ public class CodeGenerator {
 
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
-        String projectPath = System.getProperty("user.dir") + "/cloud-module/cloud-new-order";
+        String projectPath = System.getProperty("user.dir") + "/user";
         gc.setOutputDir(projectPath + "/src/main/java");
         gc.setAuthor("Sanz");
         gc.setOpen(false);
@@ -57,7 +57,7 @@ public class CodeGenerator {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://rm-bp15qb6d0jd02q7k4qo.mysql.rds.aliyuncs.com:3306/cloud_order?useUnicode=true&characterEncoding=UTF-8&tinyInt1isBit=false&useSSL=false&serverTimezone=GMT%2b8");
+        dsc.setUrl("jdbc:mysql://rm-bp15qb6d0jd02q7k4qo.mysql.rds.aliyuncs.com:3306/cloud_user?useUnicode=true&characterEncoding=UTF-8&tinyInt1isBit=false&useSSL=false&serverTimezone=GMT%2b8");
         // dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("sb");

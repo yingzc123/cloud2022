@@ -1,7 +1,7 @@
 package com.yzc.cloud.dao;
 
-import com.yzc.cloud.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.yzc.cloud.entity.User;
 
 /**
  * <p>
