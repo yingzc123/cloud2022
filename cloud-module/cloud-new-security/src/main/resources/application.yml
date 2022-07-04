@@ -1,0 +1,26 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource      #当前数据源操作类型
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://rm-bp15qb6d0jd02q7k4qo.mysql.rds.aliyuncs.com:3306/cloud_user?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: sb
+    password: Hahahaha!
+mybatis:
+  type-aliases-package: com.yzc.cloud.entity # 所有Entity别名类所在包
+  mapper-locations: classpath:mybatis/mapper/*.xml # mapper映射文件
+mybatis-plus:
+  mapper-locations: classpath:com/yzc/cloud/mapper/*.xml
+
+logging:
+  level:
+    com.xiao: debug
+
+
+
+
+
+
+

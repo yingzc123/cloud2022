@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>cloud-module</artifactId>
+        <groupId>com.yzc.cloud</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>cloud-new-utils</artifactId>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+     <dependency>
+            <groupId>aspose-words-22.6-jdk17</groupId>
+            <artifactId>aspose-words</artifactId>
+            <version>22.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>aspose-pdf</groupId>
+            <artifactId>aspose-pdf</artifactId>
+            <version>22.4</version>
+        </dependency>
+
+        <!-- excel to pdf -->
+        <dependency>
+            <groupId>aspose-cells-8.8.0</groupId>
+            <artifactId>aspose-cells</artifactId>
+            <version>8.8.0</version>
+        </dependency>
+
+
+        <!--  未能使用到 都是转类
+          <dependency>
+             <groupId> e-iceblue </groupId>
+             <artifactId>spire.pdf</artifactId>
+             <version>5.4.0</version>
+         </dependency>
+
+         <dependency>
+             <groupId> e-iceblue </groupId>
+             <artifactId>spire.office</artifactId>
+             <version>7.5.4</version>
+         </dependency>
+
+
+           <dependency>
+                 <groupId>e-iceblue</groupId>
+                 <artifactId>spire.pdf.free</artifactId>
+                 <version>5.1.0</version>
+             </dependency>
+ -->
+
+
+
+
+             <dependency>
+            <groupId>com.yzc.cloud</groupId>
+            <artifactId>cloud-base-yzc</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+       <!-- <repository>
+            <id>com.e-iceblue</id>
+            <name>e-iceblue</name>
+            <url>https://repo.e-iceblue.cn/repository/maven-public/</url>
+        </repository>-->
+        <repository>
+            <id>AsposeJavaAPI</id>
+            <name>Aspose Java API</name>
+            <url>https://repository.aspose.com/repo/</url>
+        </repository>
+    </repositories>
+</project>
