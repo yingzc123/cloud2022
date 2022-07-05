@@ -14,6 +14,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * <p>
@@ -39,13 +42,16 @@ public class CloudOrderServiceImpl extends ServiceImpl<CloudOrderMapper, CloudOr
      * 测试分布式事务
      */
     @Override
-    @GlobalTransactional
+   // @GlobalTransactional
+    @Transactional
     public void updateOrder() {
+        new ConcurrentHashMap();
         proxyUserFeign.updateUser();
         //测试执行两个数据源同时修改会一起回滚否
+      //  update(new UpdateWrapper<CloudOrder>().set("order_no","abnormalMaster").eq("order_id",1));
+       /* cloudOrderService.abnormalAffair();
+        couponService.updateCoupon();*/
         update(new UpdateWrapper<CloudOrder>().set("order_no","abnormalMaster").eq("order_id",1));
-        cloudOrderService.abnormalAffair();
-        couponService.updateCoupon();
         System.out.println("sb");
         int i= 3/0;
 

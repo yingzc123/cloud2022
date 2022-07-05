@@ -17,6 +17,7 @@
         <module>cloud-new-sql-server</module>
         <module>cloud-new-security</module>
         <module>cloud-new-utils</module>
+        <module>cloud-new-sentinel</module>
     </modules>
 
 
