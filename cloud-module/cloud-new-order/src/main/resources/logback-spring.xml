@@ -75,7 +75,7 @@
 
     <!--开发环境:打印控制台-->
     <springProfile name="dev">
-        <!--<logger name="com.yzc.cloud" level="DEBUG"/>-->
+      <logger name="com.yzc.cloud" level="DEBUG"/>
         <root level="INFO">
             <appender-ref ref="consoleAppender"/>
             <appender-ref ref="fileAppender"/>

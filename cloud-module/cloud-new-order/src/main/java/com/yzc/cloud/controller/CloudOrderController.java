@@ -2,15 +2,18 @@ package com.yzc.cloud.controller;
 
 
 import com.yzc.cloud.entity.CloudOrder;
+import com.yzc.cloud.entity.dto.CloudOrderDTO;
 import com.yzc.cloud.result.ResultObject;
 import com.yzc.cloud.service.CloudOrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
 import java.util.List;
 
 /**
@@ -30,7 +33,7 @@ public class CloudOrderController {
     private CloudOrderService cloudOrderService;
 
     @PostMapping
-    public List<CloudOrder> returnList(){
+    public List<CloudOrder> returnList(@RequestBody  @Valid CloudOrderDTO.Test dto){
         log.info("我被调用了:{}","niu");
         return cloudOrderService.list();
     }
