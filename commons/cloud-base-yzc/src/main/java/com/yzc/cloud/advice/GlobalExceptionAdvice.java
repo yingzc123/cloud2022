@@ -35,7 +35,7 @@ public class GlobalExceptionAdvice {
      */
     @ExceptionHandler(Exception.class)
     public ResultObject error(Exception e) {
-        e.printStackTrace();
+        //e.printStackTrace();
         return ResultObject.error().message(e.getMessage());
     }
 
@@ -69,7 +69,6 @@ public class GlobalExceptionAdvice {
         e.printStackTrace();
         // 从异常对象中拿到ObjectError对象
         ObjectError objectError = e.getBindingResult().getAllErrors().get(0);
-        log.info("objectError:{}", JSONUtil.toJsonStr(objectError));
         // 然后提取错误提示信息进行返回
         return ResultObject.error().code(ResultCode.ERROR.getCode()).message(objectError.getDefaultMessage());
     }

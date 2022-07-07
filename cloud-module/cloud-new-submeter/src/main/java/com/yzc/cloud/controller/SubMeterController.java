@@ -33,5 +33,10 @@ public class SubMeterController {
         subMeterService.getThread();
     }
 
+    @GetMapping("/toException")
+    public void toException(){
+        subMeterService.toException();
+    }
+
 
 }

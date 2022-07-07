@@ -48,4 +48,9 @@ public class SubMeterServiceImpl extends ServiceImpl<SubMeterMapper, SubMeter> i
             });
         }
     }
+
+    @Override
+    public void toException() {
+        int i= 3/0;
+    }
 }

@@ -16,4 +16,6 @@ public interface SubMeterService extends IService<SubMeter> {
 
     void getThread();
 
+    void  toException();
+
 }
