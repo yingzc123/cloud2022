@@ -18,6 +18,7 @@
         <module>cloud-new-security</module>
         <module>cloud-new-utils</module>
         <module>cloud-new-sentinel</module>
+        <module>cloud-new-submeter</module>
     </modules>
 
 
