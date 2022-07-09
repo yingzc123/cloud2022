@@ -19,6 +19,7 @@
         <module>cloud-new-utils</module>
         <module>cloud-new-sentinel</module>
         <module>cloud-new-submeter</module>
+        <module>cloud-new-redis-sentinel</module>
     </modules>
 
 
