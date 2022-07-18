@@ -20,6 +20,7 @@
         <module>cloud-new-sentinel</module>
         <module>cloud-new-submeter</module>
         <module>cloud-new-redis-sentinel</module>
+        <module>cloud-new-docker-file</module>
     </modules>
 
 
